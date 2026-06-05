@@ -1,0 +1,15 @@
+sddm
+hyprland
+hyprpolkitagent
+xdg-desktop-portal-hyprland
+kitty
+hyprlauncher
+thunar
+neovim
+quickshell
+telegram-desktop
+firefox
+pywal
+hyprtoolkit
+hyprpaper
+fastfetch

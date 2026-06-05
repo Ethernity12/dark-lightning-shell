@@ -22,8 +22,9 @@ def install_pkg(pkg_name: str) -> None:
 def is_pkg_exits(pkg_name: str) -> bool:
     return shutil.which(pkg_name)
 
-def test_installer():
-    install_script(['git', 'wget', 'nano'])
+def install_start() -> None:
+    with open('packages.txt', 'r') as f:
+        pkg_list = [line.strip() for line in f if line.strip() and not line.startswith('#')]
 
 
 if not shutil.which('paru'):
@@ -71,4 +72,4 @@ if __name__ == '__main__':
     logger.handlers.clear()
     logger.addHandler(handler)
 
-    test_installer()
+    install_start()
